@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
+    <projectUrl>https://github.com/tetradog/Gabriel.Cat.Xamarin.Wpf</projectUrl>
+    <repository url="https://github.com/tetradog/Gabriel.Cat.Xamarin.Wpf" />
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2018</copyright>
+    <tags>Xamarin Gabriel Wpf</tags>
+  </metadata>
+</package>
