@@ -9,19 +9,20 @@ using Xamarin.Forms.Platform.WPF.Extensions;
 
 namespace Gabriel.Cat.Xamarin.Wpf
 {
-    public static class Inicializador<TXamarinFormsMainPage, TWPFMainWindows>
-        where TXamarinFormsMainPage : ContentPage, new()
-        where TWPFMainWindows : Window  
+    public static class Inicializador<TXamarinFormsMainPage>
+        where TXamarinFormsMainPage : ContentPage, new() 
 
     {
-        public static void Start(System.Windows.Application currentApp, TWPFMainWindows mainWpf)
+        public static void Start(/*System.Windows.Application currentApp,*/ Window mainWpf)
         {
             TXamarinFormsMainPage main;
+
             Forms.Init();
             main = new TXamarinFormsMainPage();
             if (main.Title != null)
                 mainWpf.Title = main.Title;
-            currentApp.MainWindow.Content = main.ToFrameworkElement();
+           System.Windows.Application.Current.MainWindow.Content = main.ToFrameworkElement();
+            //currentApp.MainWindow.Content = main.ToFrameworkElement();
         }
     }
 }
