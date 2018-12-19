@@ -13,7 +13,7 @@ namespace Gabriel.Cat.Xamarin.Wpf
         where TXamarinFormsMainPage : ContentPage, new() 
 
     {
-        public static void Start(/*System.Windows.Application currentApp,*/ Window mainWpf)
+        public static void Start( Window mainWpf)
         {
             TXamarinFormsMainPage main;
 
@@ -22,7 +22,6 @@ namespace Gabriel.Cat.Xamarin.Wpf
             if (main.Title != null)
                 mainWpf.Title = main.Title;
            System.Windows.Application.Current.MainWindow.Content = main.ToFrameworkElement();
-            //currentApp.MainWindow.Content = main.ToFrameworkElement();
         }
     }
 }
