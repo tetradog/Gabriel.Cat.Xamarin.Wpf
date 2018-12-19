@@ -4,5 +4,6 @@ Solo se tiene que añadir al proyecto wpf los paquetes del nuget Xamarin.Forms.P
 
 
 en el constructor después del InitialitzeComponent();
-//XamarinNameSpace es el namespace
+
+//XamarinNameSpace es el namespace del proyecto Xamarin.Forms
 Gabriel.Cat.Xamarin.Wpf.Inicializador<XamarinNameSpace.MainPage>.Start(this);
