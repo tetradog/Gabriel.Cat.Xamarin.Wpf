@@ -7,3 +7,5 @@ en el constructor después del InitialitzeComponent();
 
 //XamarinNameSpace es el namespace del proyecto Xamarin.Forms
 Gabriel.Cat.Xamarin.Wpf.Inicializador<XamarinNameSpace.MainPage>.Start(this);
+
+Licencia GNUV3
