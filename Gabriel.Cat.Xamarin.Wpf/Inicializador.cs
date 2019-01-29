@@ -10,7 +10,7 @@ using Xamarin.Forms.Platform.WPF.Extensions;
 namespace Gabriel.Cat.Xamarin.Wpf
 {
     public static class Inicializador<TXamarinFormsMainPage>
-        where TXamarinFormsMainPage : ContentPage, new() 
+        where TXamarinFormsMainPage : Page, new() 
 
     {
         public static void Start( Window mainWpf)
